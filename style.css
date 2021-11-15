@@ -85,12 +85,45 @@
     margin: 50px 100px;
     width: 400px;
 }
+
+.ex-9-img:hover{
+    filter: invert(0.6) hue-rotate(60deg);
+    border-radius: 30px;
+    transition: 4s;
+    transform: scale(1.5);
+}
+
 .ex-10-icon {
     font-size: 60px;
+    animation: loader 2s infinite linear;
 }
+
+@keyframes loader {
+    0%{
+        transform: rotate(2turn);
+    }
+}
+
 .ex-11-icon {
     font-size: 60px;
 }
+
+.ex-11-icon:hover{
+    animation: invert-loader 2s infinite linear;
+}
+
+@keyframes invert-loader {
+    0%{
+        transform: rotate(0);
+    }
+    80%{
+        transform: rotate(214deg);
+    }
+    100%{
+        transform: rotate(0);
+    }
+}
+
 .ex-12-button, .ex-13-button {
     position: relative;
     display: block;
