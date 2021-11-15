@@ -106,6 +106,7 @@
 
 .ex-11-icon {
     font-size: 60px;
+    animation: loader 2s infinite linear;
 }
 
 .ex-11-icon:hover{
@@ -144,7 +145,17 @@
     background: #f5f5f5;
     width: 60px;
     height: 20px;
+
 }
+
+.ex-12-top-white{
+    animation: topp 2s infinite;
+}
+
+.ex-12-bottom-white{
+    animation: bottomm 2s infinite;
+}
+
 .ex-12-bottom-white, .ex-13-bottom-white {
     position: absolute;
     bottom: -10px;
@@ -152,4 +163,60 @@
     background: #f5f5f5;
     width: 60px;
     height: 20px;
+}
+
+@keyframes topp {
+    0% {
+        left: 10%;
+    }
+    50% {
+        left: calc(100% - 60px);
+    }
+    100% {
+        left: 10%;
+    }
+}
+
+@keyframes bottomm {
+    0% {
+        left: 10%;
+    }
+    50% {
+        left: calc(100% - 60px);
+    }
+    100% {
+        left: 10%;
+    }
+}
+
+.ex-13-top-white{
+    animation: complete infinite linear 2s;
+}
+
+/* PER L'ESERCIZIO NR. 13 SONO RICORSA ALLA SOLUZIONE */
+@keyframes  complete {
+    0% {
+        left: 10%;
+        top: -10px;
+    }
+    30% {
+        left: calc(100% - 30px);
+        top: -10px;
+    }
+    45% {
+        left: calc(100% - 30px);
+        top: 100%;
+    }
+    75% {
+        left: 0;
+        top: 100%;
+    }
+    90% {
+        left: -15px;
+        top: -10px;
+    }
+    100% {
+        left: 10%;
+        top: -10px;
+    }
 }
